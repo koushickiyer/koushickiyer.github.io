@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden scroll;
+}
+
+body {
+  color: $000;
+  background-color: #fff;
+  font-size: 16px;
+  font-family: Montserrat, sans-serif;
+  line-height: 2;
+}
+
+header {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  color: #000;
+  background-color: #dcd0ff;
+  z-index: 1;
+}
+
+header.home-header {
+  color: #fff;
+  background-color: transparent;
+}
+
+h1 {
+  font-family: 'Indie Flower';
+  margin: 0 20px;
+}
+
+h1 a {
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  padding: 10px 20px;
+}
+
+nav ul li a.active {
+  font-weight: bold;
+  pointer-events: none;
+  cursor: default;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main {
+  position: relative;
+  top: 8vh;
+  width: 100%;
+}
+
+main.home-main {
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#home-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: -45vh;
+}
+
+/* ABOUT */
+
+main.about {
+  height: 92vh;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 3fr 2fr;
+}
+
+main.about article {
+  padding: 40px 80px;
+}
+
+main.about figure {
+  display: flex;
+  justify-content: center;
+}
+
+#ski {
+  width: 400px;
+  height: 500px;
+  background-color: #ccc;
+}
+
+/* PHOTOS */
+
+main.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  padding: 70px 40px;
+}
+
+main.photos section.column {
+  display: flex;
+  flex-direction: column;
+}
+
+main.photos figure {
+  height: 500px;
+  background-color: #ccc;
+  margin: 20px 0;
+}
+
+/* BLOG */
+
+main.blog {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+main.blog article {
+  max-width: 1000px;
+  padding: 20px 0;
+}
+
+main.blog span {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+main.blog p {
+  padding: 20px;
+  border: #ccc solid 1px;
+  border-radius: 5px;
+}

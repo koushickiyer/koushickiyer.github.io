@@ -7,14 +7,19 @@
 html {
   height: 100vh;
   overflow: hidden scroll;
+  background-color: #000;
 }
 
 body {
-  color: $000;
   background-color: #fff;
   font-size: 16px;
   font-family: Montserrat, sans-serif;
   line-height: 2;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
 header {
@@ -24,8 +29,8 @@ header {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  color: #000;
-  background-color: #dcd0ff;
+  color: #fff;
+  background-color: #000;
   z-index: 1;
 }
 
@@ -36,7 +41,7 @@ header.home-header {
 
 h1 {
   font-family: 'Indie Flower';
-  margin: 0 20px;
+  padding: 0 20px;
 }
 
 h1 a {
@@ -59,15 +64,16 @@ nav ul li a.active {
   cursor: default;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 main {
   position: relative;
   top: 8vh;
   width: 100%;
+  min-height: 92vh;
+  background-color: #fff;
+}
+
+main a {
+  text-decoration: underline;
 }
 
 main.home-main {
@@ -80,7 +86,7 @@ main.home-main {
   width: 100%;
   height: auto;
   position: absolute;
-  top: -45vh;
+  top: -15vh;
 }
 
 /* ABOUT */
@@ -93,7 +99,7 @@ main.about {
 }
 
 main.about article {
-  padding: 40px 80px;
+  padding: 50px;
 }
 
 main.about figure {
@@ -102,9 +108,8 @@ main.about figure {
 }
 
 #ski {
-  width: 400px;
-  height: 500px;
-  background-color: #ccc;
+  width: 500px;
+  height: auto;
 }
 
 /* PHOTOS */
@@ -132,7 +137,7 @@ main.photos figure {
 main.blog {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   padding: 50px 0;
 }

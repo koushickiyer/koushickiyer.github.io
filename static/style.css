@@ -23,9 +23,10 @@ a {
 
 header {
   width: 100%;
-  height: 8vh;
+  height: 22vh;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: #fff;
   background-color: #000;
@@ -35,11 +36,10 @@ header {
 
 h1 {
   font-family: 'Indie Flower';
-  padding: 0 20px;
 }
 
 h1 a {
-  padding: 10px;
+  padding: 10px 20px;
 }
 
 nav ul {
@@ -60,12 +60,24 @@ nav ul li a.active {
 
 main {
   position: relative;
-  top: 8vh;
+  top: 22vh;
   width: 100%;
 }
 
 main a {
   text-decoration: underline;
+}
+
+@media screen and (min-width: 1366px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 8vh;
+  }
+
+  main {
+    top: 8vh;
+  }
 }
 
 /* HOME */
@@ -91,7 +103,7 @@ header.home nav ul li a:hover {
 }
 
 main.home {
-  position: static;
+  top: 0;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -101,8 +113,8 @@ main.home {
 
 main.home article {
   border-top: #ccc solid 1px;
-  max-width: 60vw;
-  padding: 40px;
+  max-width: 90vw;
+  padding: 20px 0;
 }
 
 /* #ski {
@@ -110,13 +122,20 @@ main.home article {
   height: auto;
 } */
 
+@media screen and (min-width: 1366px) {
+  main.home article {
+    max-width: 60vw;
+    padding: 40px;
+  }
+}
+
 /* PHOTOS */
 
 main.photos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 40px;
-  padding: 70px 40px;
+  grid-template-columns: 1fr;
+  grid-gap: 0;
+  padding: 20px;
 }
 
 main.photos section.column {
@@ -128,7 +147,19 @@ main.photos img {
   width: 100%;
   height: auto;
   background-color: #ccc;
-  margin: 20px 0;
+  margin: 10px 0;
+}
+
+@media screen and (min-width: 1366px) {
+  main.photos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 70px 40px;
+  }
+
+  main.photos img {
+    margin: 20px 0;
+  }
 }
 
 /* BLOG */
@@ -137,24 +168,38 @@ main.blog {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0;
+  padding: 0;
   background-color: #adc3d1;
 }
 
 main.blog article {
-  max-width: 1000px;
+  max-width: 90vw;
   margin: 40px 0;
-  padding: 40px;
+  padding: 20px;
   border: #ccc solid 1px;
   border-radius: 5px;
   background-color: #fff;
+}
+
+main.blog h2 {
+  font-size: 20px;
 }
 
 main.blog ol {
   margin-left: 40px;
 }
 
-main.blog a {
-  font-family: Georgia;
-  font-style: italic;
+@media screen and (min-width: 1366px) {
+  main.blog h2 {
+    font-size: 24px;
+  }
+
+  main.blog {
+    padding: 50px 0;
+  }
+
+  main.blog article {
+    max-width: 64vw;
+    padding: 40px;
+  }
 }

@@ -7,7 +7,6 @@
 html {
   height: 100vh;
   overflow: hidden scroll;
-  background-color: #000;
 }
 
 body {
@@ -28,15 +27,10 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   color: #fff;
   background-color: #000;
+  position: fixed;
   z-index: 1;
-}
-
-header.home-header {
-  color: #fff;
-  background-color: transparent;
 }
 
 h1 {
@@ -68,49 +62,53 @@ main {
   position: relative;
   top: 8vh;
   width: 100%;
-  min-height: 92vh;
-  background-color: #fff;
 }
 
 main a {
   text-decoration: underline;
 }
 
-main.home-main {
-  top: 0;
-  height: 100vh;
-  overflow: hidden;
-}
+/* HOME */
 
-#home-bg {
+#banner {
   width: 100%;
   height: auto;
-  position: absolute;
-  top: -15vh;
 }
 
-/* ABOUT */
-
-main.about {
-  height: 92vh;
-  display: grid;
-  align-items: center;
-  grid-template-columns: 3fr 2fr;
+header.home {
+  height: 20vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #000;
+  background-color: #fff;
+  position: static;
 }
 
-main.about article {
-  padding: 50px;
+header.home nav ul li a:hover {
+  background-color: #adc3d1;
+  border-radius: 5px;
+  transition: 400ms;
 }
 
-main.about figure {
+main.home {
+  position: static;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  padding: 20px;
 }
 
-#ski {
-  width: 500px;
-  height: auto;
+main.home article {
+  border-top: #ccc solid 1px;
+  max-width: 60vw;
+  padding: 40px;
 }
+
+/* #ski {
+  width: 400px;
+  height: auto;
+} */
 
 /* PHOTOS */
 
@@ -126,8 +124,9 @@ main.photos section.column {
   flex-direction: column;
 }
 
-main.photos figure {
-  height: 500px;
+main.photos img {
+  width: 100%;
+  height: auto;
   background-color: #ccc;
   margin: 20px 0;
 }
@@ -137,24 +136,25 @@ main.photos figure {
 main.blog {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
   padding: 50px 0;
+  background-color: #adc3d1;
 }
 
 main.blog article {
   max-width: 1000px;
-  padding: 20px 0;
-}
-
-main.blog span {
-  font-size: 12px;
-  text-transform: uppercase;
-  color: #777;
-}
-
-main.blog p {
-  padding: 20px;
+  margin: 40px 0;
+  padding: 40px;
   border: #ccc solid 1px;
   border-radius: 5px;
+  background-color: #fff;
+}
+
+main.blog ol {
+  margin-left: 40px;
+}
+
+main.blog a {
+  font-family: Georgia;
+  font-style: italic;
 }

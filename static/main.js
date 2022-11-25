@@ -7,7 +7,11 @@ Array.from(cols).forEach((col, ncol) => {
       const nrows = dir.match(re).length/2;
       for (var i=1; i<=nrows; i++) {
         var img = document.createElement('img');
-        img.src = `static/images/ski_${ncol+1}0${i}.jpg`;
+        if (i < 10) {
+          img.src = `static/images/ski_${ncol+1}0${i}.jpg`;
+        } else {
+          img.src = `static/images/ski_${ncol+1}${i}.jpg`;
+        }
         col.append(img);
       }
     })

@@ -2,6 +2,9 @@ const spos = [
   [1, 3, 2],
   [4, 5, 6],
   [0, 7, 0],
+  [1, 3, 2],
+  [4, 5, 6],
+  [0, 7, 0],
 ];
 
 const mpos = [
@@ -17,10 +20,11 @@ function populate(val) {
       if (!pos[i][n]) continue;
       var img = document.createElement('img');
       if (pos[i][n] < 10) {
-        img.src = `static/images/${val}0${pos[i][n]}.jpg`;
+        img.src = `static/images/${val}0${pos[i][n]}.webp`;
       } else {
-        img.src = `static/images/${val}${pos[i][n]}.jpg`;
+        img.src = `static/images/${val}${pos[i][n]}.webp`;
       }
+      img.loading = 'lazy';
       col.append(img);
     };
   });

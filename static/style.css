@@ -127,6 +127,14 @@ main.home article {
   padding: 20px 0;
 }
 
+main.home p.license {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
 /* #ski {
   width: 400px;
   height: auto;

@@ -1,14 +1,12 @@
 const spos = [
   [1, 3, 2],
-  [4, 5, 6],
-  [0, 7, 0],
-  [1, 3, 2],
-  [4, 5, 6],
-  [0, 7, 0],
+  [5, 4, 7],
+  [0, 6, 0],
 ];
 
 const mpos = [
-  [1, 2, 3],
+  [3, 2, 1],
+  [4, 0, 0],
 ];
 
 const cols = document.querySelectorAll('div.column');

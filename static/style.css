@@ -23,7 +23,7 @@ a {
 
 header {
   width: 100%;
-  height: 22vh;
+  height: 16vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -60,7 +60,7 @@ nav a.active {
 
 main {
   position: relative;
-  top: 22vh;
+  top: 16vh;
   width: 100%;
 }
 

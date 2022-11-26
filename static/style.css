@@ -78,7 +78,7 @@ main a {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1024px) {
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -142,7 +142,7 @@ main.home article {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1024px) {
   header.home {
     height: 20vh;
   }
@@ -216,7 +216,7 @@ main.photos img {
   }
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1024px) {
   main.photos {
     padding: 40px 0;
   }
@@ -269,7 +269,7 @@ main.blog ol {
   margin-left: 40px;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (min-width: 1024px) {
   main.blog h2 {
     font-size: 24px;
   }
